@@ -1,0 +1,48 @@
+@media screen and (orientation:landscape) {
+  #container {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    width: /* screen width */ ;
+    height: /* screen height */ ;
+    overflow: scroll;
+  }
+}
+    
+div {
+
+}
+table
+{
+	position: left;
+	width: 100%;
+	border-collapse:collapse;
+	border-width:0px;
+}
+td
+{
+	
+}
+img
+{
+    width:100%;
+    max-width:100%;
+}
+#up {
+position:center;
+display:inline-block;
+}
+#left {
+position:center;
+display:inline-block;
+}
+#right{
+position:center;
+display:inline-block;
+}
+#down {
+position:center;
+display:inline-block;
+}
+
+
