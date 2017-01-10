@@ -11,6 +11,10 @@ The Viva CMS has been written from scratch using Lua and Luvit and is available 
 
    * ► Ability to enhance and maintain it from a Chromebook: After leaving the game development industry I wanted to decouple myself from the regular desktop and instead embrace mobility. As such I bought a Chromebook and looked forward to starting a project that I could work on using my new tool. With no databases, frameworks and desktop oriented tools (such as desktop game engines and editors) a website seemed like the best contender.
 
+**Live Demo:** - [www.vivachrome.com][1]
+
+[1]: http://www.vivachrome.com        "Viva Chrome website" 
+
 # License for using the CMS - MIT
 
 
