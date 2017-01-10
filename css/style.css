@@ -69,6 +69,9 @@ p, li {
 	list-style-type: none;
 }
 
+p {
+	font-size: 16px;
+}
 h1 {
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -308,29 +311,66 @@ img {
 	RESPONSIVENESS
 --------------------------------------------- */
 /* Mobile/tiny windows */
-@media (max-width: 1080px) {
+@media (min-width: 961px) {
+	p, li
+	{
+		font-size: 14px;
+		line-height: 15px;
+		font-weight:normal;
+	}
+	h1
+	{
+		font-size: 20px;
+		font-weight:normal;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+    h2 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 960px) {
 	.info {
 		margin-right: 10px;
 		margin-left: 10px;
 		padding: 10px 0 10px 0;
 	}
+	p, li
+	{
+		font-size: 10px;
+		line-height: 11px;
+		font-weight:normal;
+	}
+	h1
+	{
+		font-size: 16px;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+    }
 }
 
 /* Mobile/tiny windows */
 @media (max-width: 768px) {
-}
-
-/* Customize container */
-@media (min-width: 768px) {
-	.container {
-		max-width: 1080px;
+	p, li
+	{
+		font-size: 10px;
+		line-height: 11px;
+		font-weight:normal;
 	}
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-	.info {
-		margin-right: 10px;
-		margin-left: 10px;
+	h1
+	{
+		font-size: 16px;
+		font-weight: bold;
+		font-family: sans-serif;
 	}
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+    }
 }

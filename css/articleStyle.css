@@ -211,7 +211,6 @@ img {
     text-decoration: none;
     text-decoration-color: -moz-use-text-color;
     text-decoration-line: none;
-    text-decoration-style: solid;
 }
 
 #middle-add
@@ -334,30 +333,79 @@ p.legibility {
 /* ---------------------------------------------
 	RESPONSIVENESS
 --------------------------------------------- */
+/* ---------------------------------------------
+	RESPONSIVENESS
+--------------------------------------------- */
 /* Mobile/tiny windows */
-@media (max-width: 1080px) {
+@media (min-width: 961px) {
+	p, li
+	{
+		font-size: 14px;
+		line-height: 15px;
+		font-weight:normal;
+		text-rendering: optimizeLegibility;
+	}
+	h1
+	{
+		font-size: 20px;
+		font-weight:normal;
+		font-weight: bold;
+		font-family: sans-serif;
+		text-rendering: optimizeLegibility;
+	}
+    h2 {
+        font-size: 17px;
+        font-weight: bold;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+@media (max-width: 960px) {
 	.info {
 		margin-right: 10px;
 		margin-left: 10px;
 		padding: 10px 0 10px 0;
 	}
+	p, li
+	{
+		font-size: 10px;
+		line-height: 11px;
+		font-weight:normal;
+		text-rendering: optimizeLegibility;
+	}
+	h1
+	{
+		font-size: 16px;
+		font-weight: bold;
+		font-family: sans-serif;
+		text-rendering: optimizeLegibility;
+	}
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+        text-rendering: optimizeLegibility;
+    }
 }
 
 /* Mobile/tiny windows */
 @media (max-width: 768px) {
-}
-
-/* Customize container */
-@media (min-width: 768px) {
-	.container {
-		max-width: 1080px;
+	p, li
+	{
+		font-size: 10px;
+		line-height: 11px;
+		font-weight:normal;
+		text-rendering: optimizeLegibility;
 	}
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-	.info {
-		margin-right: 10px;
-		margin-left: 10px;
+	h1
+	{
+		font-size: 16px;
+		font-weight: bold;
+		font-family: sans-serif;
+		text-rendering: optimizeLegibility;
 	}
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+        text-rendering: optimizeLegibility;
+    }
 }

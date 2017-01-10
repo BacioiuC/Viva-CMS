@@ -194,10 +194,12 @@ function renderArticle(_name)
 		articleList = ''..articleList..'<div class="articleBody">'
 		for j = 1, #v.articleBody do
 			--print(""..v.articleBody[j].."")
-			articleList = ''..articleList..''..v.articleBody[j]..''
-			if j == math.floor(#v.articleBody/2) then
+			
+			if string.find(v.articleBody[j], "#ADDHERE") then
+				v.articleBody[j] = string.gsub(v.articleBody[j], "#ADDHERE", "")
 				articleList = ''..articleList..'<div id="middle-add"><center><span>Advertisement</span><br/><img src="/media/add_box_1.png"><br/><span>Advertisement</span></center></div>'
 			end
+			articleList = ''..articleList..''..v.articleBody[j]..''
 		end
 		articleList = ''..articleList..'</div>'
 		articleList = ""..articleList..'</td></tr>'
